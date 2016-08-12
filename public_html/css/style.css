@@ -139,8 +139,14 @@ img {
 .green {
   color: #0d9e27;
 }
+.blue {
+  color: #32579a;
+}
 .footer {
   color: #333333;
+}
+.sensor {
+  color: #f7f8fb;
 }
 .wbc {
   background: #ffffff;
@@ -153,6 +159,9 @@ img {
 }
 .fbc {
   background: #333333;
+}
+.sbc {
+  background: #f7f8fb;
 }
 .ie8 .box-shadow {
   outline: 1px solid #cccccc;
@@ -700,6 +709,7 @@ footer {
   font-size: 14px;
   width: 100%;
   height: 220px;
+  line-height: 28px;
 }
 .footer__cont {
   width: 940px;
@@ -716,9 +726,13 @@ footer {
 }
 .footer__links {
   margin: auto;
+  padding-left: 13%;
 }
 .footer__social {
   float: right;
+}
+.footer__name {
+  padding-bottom: 10px;
 }
 .block__bg_top {
   position: absolute;
@@ -726,6 +740,13 @@ footer {
   width: 100%;
   height: 837px;
   background: url(../images/bg_top2.png) no-repeat center center;
+}
+.block__bg_device {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 780px;
+  background: url(../images/bg_device.png) no-repeat center center;
 }
 .block__top {
   color: #ffffff;
@@ -776,6 +797,18 @@ footer {
 .fb {
   display: inline-block !important;
 }
+.link__name {
+  display: initial;
+  border-bottom: 1px solid #5c5c5c;
+}
+.vk {
+  padding: 0 15px 0 25px;
+  background: url(../images/social_icons/vk.png) no-repeat left center;
+}
+.fb {
+  padding-left: 25px;
+  background: url(../images/social_icons/fb.png) no-repeat 11px center;
+}
 .video {
   text-align: center;
   margin: 160px auto 60px auto;
@@ -812,5 +845,98 @@ video {
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s;
   text-decoration: underline;
+}
+.sensors {
+  color: #000000;
+  background: #f7f8fb;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 115px;
+}
+.sensors__title {
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  padding: 70px 0 65px 0;
+}
+.sensors__block {
+  width: 900px;
+  margin: auto;
+  padding-left: 500px;
+  background: url(../images/sensors_block/device.png) no-repeat left center;
+}
+.sensors__col {
+  display: inline-block;
+  text-align: left;
+  font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.sensors__col_item {
+  padding-top: 60px;
+  margin-top: 60px;
+}
+.vid {
+  background: url(../images/sensors_block/video.png) no-repeat left top;
+}
+.volt {
+  background: url(../images/sensors_block/volt.png) no-repeat left top;
+}
+.water {
+  background: url(../images/sensors_block/water.png) no-repeat left top;
+}
+.lamp {
+  background: url(../images/sensors_block/lamp.png) no-repeat left top;
+}
+.wifi {
+  background: url(../images/sensors_block/wifi.png) no-repeat left top;
+}
+.temp {
+  background: url(../images/sensors_block/temp.png) no-repeat left top;
+}
+.door {
+  background: url(../images/sensors_block/door.png) no-repeat left top;
+}
+.motion {
+  background: url(../images/sensors_block/motion.png) no-repeat left top;
+}
+.socket {
+  background: url(../images/sensors_block/socket.png) no-repeat left top;
+}
+.work {
+  background: url(../images/sensors_block/work.png) no-repeat left top;
+}
+.wet {
+  background: url(../images/sensors_block/wet.png) no-repeat left top;
+}
+.smoke {
+  background: url(../images/sensors_block/smoke.png) no-repeat left top;
+}
+.sound {
+  background: url(../images/sensors_block/sound.png) no-repeat left top;
+}
+.weather {
+  background: url(../images/sensors_block/weather.png) no-repeat left top;
+}
+.safety {
+  background: url(../images/sensors_block/safety.png) no-repeat left top;
+}
+.device {
+  height: 780px;
+  text-transform: uppercase;
+}
+.device__block {
+  color: #000000;
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
+  margin: auto;
+  font-size: 32px;
+  width: 600px;
+  line-height: 45px;
+  padding-top: 290px;
+  padding-bottom: 200px;
+  padding-right: 700px;
+  background: url(../images/device.png) no-repeat right center;
+}
+.device__link {
+  font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
+  color: #32579a;
 }
 /*# sourceMappingURL=style.css.map */
