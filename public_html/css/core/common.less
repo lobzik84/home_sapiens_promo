@@ -1,22 +1,15 @@
-@white:#fff;
-@black:#000;
-@blue:#3f51b5;
-@block:#444444;
-@drop:#333333;
-@green:#4caf50;
-@red:#f44336;
-@title:#999999;
-.white {color: @white;}
+@white:#ffffff;
+@black:#000000;
+@green:#0d9e27;
+@footer:#333333;
+.white {color:@white;}
 .black{color:@black;}
 .green{color:@green;}
-.blue{color:@blue;}
-.title{color:@title;}
+.footer{color:@footer;}
 .wbc{background:@white;}
 .bbg{background:@black;}
-.bbc{background:@block;}
-.dbc{background:@drop;}
 .gbc{background:@green;}
-.rbc{background:@red;}
+.fbc{background:@footer;}
 
 
 .opacity(@opacity: 0.5) {
@@ -84,6 +77,7 @@
 .list-s-none {list-style: none outside none;}
 .tdn{text-decoration: none;}
 .tdu{text-decoration: underline;}
+.ttu{text-transform: uppercase;}
 .invert{
     text-decoration:none;
     &:hover{

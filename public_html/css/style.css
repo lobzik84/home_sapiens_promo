@@ -109,7 +109,8 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+main {
   display: block;
 }
 button,
@@ -130,37 +131,28 @@ img {
   vertical-align: middle;
 }
 .white {
-  color: #fff;
+  color: #ffffff;
 }
 .black {
-  color: #000;
+  color: #000000;
 }
 .green {
-  color: #4caf50;
+  color: #0d9e27;
 }
-.blue {
-  color: #3f51b5;
-}
-.title {
-  color: #999999;
+.footer {
+  color: #333333;
 }
 .wbc {
-  background: #fff;
+  background: #ffffff;
 }
 .bbg {
-  background: #000;
-}
-.bbc {
-  background: #444444;
-}
-.dbc {
-  background: #333333;
+  background: #000000;
 }
 .gbc {
-  background: #4caf50;
+  background: #0d9e27;
 }
-.rbc {
-  background: #f44336;
+.fbc {
+  background: #333333;
 }
 .ie8 .box-shadow {
   outline: 1px solid #cccccc;
@@ -197,6 +189,9 @@ img {
 }
 .tdu {
   text-decoration: underline;
+}
+.ttu {
+  text-transform: uppercase;
 }
 .invert {
   text-decoration: none;
@@ -656,5 +651,136 @@ strong {
 }
 .getvoip_grotesque {
   font-family: 'getvoip_grotesque', Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: 'arimo-bold';
+  src: url('../fonts/arimo-bold.eot');
+  src: url('../fonts/arimo-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/arimo-bold.woff2') format('woff2'), url('../fonts/arimo-bold.woff') format('woff'), url('../fonts/arimo-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.arimo-bold {
+  font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: 'arimo-regular';
+  src: url('../fonts/arimo-regular.eot');
+  src: url('../fonts/arimo-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/arimo-regular.woff2') format('woff2'), url('../fonts/arimo-regular.woff') format('woff'), url('../fonts/arimo-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.arimo-regular {
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
+}
+header {
+  font-family: 'getvoip_grotesque', Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__title {
+  font-size: 31px;
+  letter-spacing: 2px;
+}
+.header__title:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+.header__subtitle {
+  font-size: 11px;
+  letter-spacing: 8px;
+  padding-top: 5px;
+}
+footer {
+  background: #333333;
+  color: #ffffff;
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.block__bg_top {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 837px;
+  background: url(../images/bg_top2.png) no-repeat center center;
+}
+.block__top {
+  color: #ffffff;
+  margin: 100px auto 0 auto;
+  padding-left: 225px;
+  width: 690px;
+}
+.block__title {
+  font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
+  font-size: 44px;
+}
+.block__text {
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
+  padding-top: 25px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.order {
+  display: block;
+  color: #ffffff;
+  background: #0d9e27;
+  text-decoration: none;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -khtml-border-radius: 40px;
+  border-radius: 40px;
+  margin-top: 60px;
+  font-size: 21px;
+  width: 345px;
+  height: 85px;
+}
+.order__title {
+  text-transform: uppercase;
+  font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+.order__price {
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
+  padding: 8px 0 0 44px;
+}
+.video {
+  text-align: center;
+  margin: 160px auto 60px auto;
+  width: 100%;
+}
+video {
+  display: block;
+  background: url(../images/video.png) no-repeat center center;
+  width: 930px;
+  height: 540px;
+  margin: auto;
+}
+.main__nav {
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 40px;
+}
+.main__nav_item {
+  display: inline-block;
+  padding-right: 40px;
+}
+.main__nav_item:last-child {
+  padding-right: 0px;
+}
+.main__nav_link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.main__nav_link:hover {
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
