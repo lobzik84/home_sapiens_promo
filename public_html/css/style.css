@@ -849,6 +849,13 @@ footer {
   display: initial;
   border-bottom: 1px solid #5c5c5c;
 }
+.link__name:hover {
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-bottom: 1px solid #ffffff;
+}
 .vk {
   padding: 0 15px 0 25px;
   background: url(../images/social_icons/vk.png) no-repeat left center;
@@ -992,6 +999,7 @@ video {
 .sensors__col_item {
   padding-top: 60px;
   margin-bottom: 60px;
+  line-height: 27px;
 }
 .vid {
   background: url(../images/sensors_block/video.png) no-repeat left top;
