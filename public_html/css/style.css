@@ -907,7 +907,7 @@ input:focus {
 }
 .video {
   text-align: center;
-  margin: 160px auto 60px auto;
+  margin: 60px auto 60px auto;
   width: 100%;
 }
 video {
@@ -1106,7 +1106,7 @@ video {
 body {
   display: block;
   margin: auto;
-  min-width: 940px;
+  min-width: 1065px;
   max-width: 1410px;
 }
 .block__cont {
@@ -1144,9 +1144,14 @@ body {
   .block__cont {
     width: 1338px;
   }
+  .block__top_img {
+    width: 470px;
+    height: 622px;
+    background-size: 470px;
+  }
   .block__top {
     width: 690px;
-    padding-left: 475px;
+    padding-left: 522px;
   }
 }
 @media all and (min-width: 1601px) {
@@ -1156,9 +1161,14 @@ body {
   .block__cont {
     width: 1410px;
   }
+  .block__top_img {
+    width: 470px;
+    height: 622px;
+    background-size: 470px;
+  }
   .block__top {
     width: 690px;
-    padding-left: 225px;
+    padding-left: 540px;
   }
 }
 /*# sourceMappingURL=style.css.map */
