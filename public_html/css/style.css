@@ -989,10 +989,10 @@ video {
 }
 .sensors__img {
   display: inline-block;
-  width: 470px;
+  width: 395px;
   height: 600px;
   background: url(../images/sensors_block/device.png) no-repeat center center;
-  background-size: 454px;
+  background-size: 395px;
   margin-top: 30px;
 }
 .sensors__col {
@@ -1001,7 +1001,7 @@ video {
   font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
   vertical-align: top;
   font-size: 18px;
-  width: 216px;
+  width: 170px;
   padding-left: 40px;
 }
 .sensors__col_item {
