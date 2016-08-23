@@ -746,16 +746,12 @@ footer {
   background: url(../images/bg_top.png) no-repeat center center;
 }
 .block__bg_device {
-  position: absolute;
-  z-index: -1;
-  width: 940px;
+  margin: auto;
   height: 780px;
   background: url(../images/bg_device.png) no-repeat center center;
 }
 .block__bg_life {
-  position: absolute;
-  z-index: -1;
-  width: 940px;
+  margin: auto;
   height: 780px;
   background: url(../images/life/life_one.png) no-repeat center center;
 }
@@ -1065,12 +1061,9 @@ video {
   text-align: left;
   display: inline-block;
   font-size: 32px;
-  width: 552px;
+  width: 450px;
   line-height: 45px;
-  /*padding-top: 290px;
-    padding-bottom: 200px;
-    padding-right: 700px;*/
-  padding: 170px 70px 0 60px;
+  padding: 170px 5px 0 0;
 }
 .device__link {
   font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
@@ -1079,7 +1072,7 @@ video {
 .device__img {
   position: relative;
   display: inline-block;
-  top: 130px;
+  top: 90px;
   width: 480px;
   height: 480px;
   background: url(../images/device.png) no-repeat center center;
@@ -1120,6 +1113,18 @@ body {
   .block__cont {
     width: 1128px;
   }
+  .sensors__col {
+    width: 190px;
+  }
+  .device__block {
+    width: 552px;
+    padding: 170px 50px 0 30px;
+  }
+  .sensors__img {
+    width: 500px;
+    height: 670px;
+    background-size: 496px;
+  }
   .block__top {
     width: 690px;
     padding-left: 400px;
@@ -1132,6 +1137,18 @@ body {
   .block__cont {
     width: 1200px;
   }
+  .sensors__col {
+    width: 200px;
+  }
+  .device__block {
+    width: 552px;
+    padding: 170px 50px 0 30px;
+  }
+  .sensors__img {
+    width: 520px;
+    height: 670px;
+    background-size: 512px;
+  }
   .block__top {
     width: 690px;
     padding-left: 420px;
@@ -1143,6 +1160,18 @@ body {
   }
   .block__cont {
     width: 1338px;
+  }
+  .sensors__col {
+    width: 220px;
+  }
+  .device__block {
+    width: 552px;
+    padding: 170px 50px 0 30px;
+  }
+  .sensors__img {
+    width: 600px;
+    height: 735px;
+    background-size: 567px;
   }
   .block__top_img {
     width: 470px;
@@ -1160,6 +1189,18 @@ body {
   }
   .block__cont {
     width: 1410px;
+  }
+  .sensors__col {
+    width: 220px;
+  }
+  .device__block {
+    width: 552px;
+    padding: 170px 50px 0 30px;
+  }
+  .sensors__img {
+    width: 600px;
+    height: 735px;
+    background-size: 567px;
   }
   .block__top_img {
     width: 470px;
