@@ -1,16 +1,25 @@
 .preorder__form {
     .ta-l;
-    .block;
+    .none;
     margin: auto;
     width: 678px;
-    height: 500px;
+    height: 470px;
+    .life__text {
+        .black;
+        margin-top: 0px;
+        padding-top: 100px;
+        width: 100%;
+    }
+}
+.preorder__form.active {
+    .block;
 }
 .form__title {
     .form;
     .ttu;
     .arimo-regular;
     font-size: 14px;
-    padding-top: 40px;
+    padding-top: 25px;
 }
 input {
     .rounded-corners(2px);
@@ -23,6 +32,24 @@ input {
     height: 58px;
     width: 670px;
     font-size: 20px;
+    &:focus {
+        color: #000000;
+        border: 1px solid @blue;
+    }
+}
+
+textarea {
+    .rounded-corners(2px);
+    .black;
+    .arimo-regular;
+    .ta-l;
+    resize: none;
+    border: 1px solid #e5e5e5;
+    background: #ffffff !important;
+    outline: none;
+    height: 120px;
+    width: 670px;
+    font-size: 16px;
     &:focus {
         color: #000000;
         border: 1px solid @blue;

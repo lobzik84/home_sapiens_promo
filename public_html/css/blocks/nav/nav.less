@@ -33,7 +33,8 @@
     font-size: 18px;
 }
 .nav__list {
-
+    margin-top: -15px;
+    padding-bottom: 35px;
 }
 .nav__item {
     .inline-b;
@@ -43,6 +44,13 @@
         .gbc;
         .transition-duration(@duration:0.3s);
     } 
+}
+.nav__item.active {
+    .inline-b;
+    .rounded-corners(40px);
+    .gbc;
+    .transition-duration(@duration:0.3s);
+    padding: 15px 23.5px 15px 23.5px;
 }
 .nav__link {
     .tdn;

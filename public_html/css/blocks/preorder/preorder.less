@@ -8,14 +8,25 @@
         margin: auto;
     }
     .order__price {
-         padding: 8px 0 0 0 !important;
+        padding: 8px 0 0 0 !important;
     }
     .nav__item {
+        .pointer;
         &:hover {
             .blbc;
             .transition-duration(@duration:0.5s);
             .nav__link {.white;}
         } 
+    }
+    .nav__item.active {
+        .blbc;
+        .transition-duration(@duration:0.5s);
+        .nav__link {.white;}
+        &:hover {
+            .blbc;
+            .transition-duration(@duration:0.5s);
+            .nav__link {.white;}
+        }
     }
     .nav__link {
         .black;

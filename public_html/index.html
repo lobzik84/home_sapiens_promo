@@ -132,15 +132,15 @@
             <div class="preorder">
                 <div class="title">Оформить предзаказ</div>
                 <nav class="nav">
-                    <ul class="nav__list">
+                    <ul id="tabs" class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Задать вопрос</a>
+                            <p class="nav__link">Задать вопрос</p>
+                        </li>
+                        <li class="nav__item active">
+                            <p class="nav__link">Оформить предзаказ</p>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Оформить предзаказ</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">О производителе</a>
+                            <p class="nav__link">О производителе</p>
                         </li>
                     </ul>
                 </nav>
@@ -152,10 +152,31 @@
                         <p class="form__title">Электронная почта<br><br>
                             <input type="text" size="50"/>
                         </p>
-                        <p class="form__title">Комментарий к заявке<br><br>
+                    </form>
+                    <p class="form__title">Ваш вопрос<br><br>
+                        <textarea></textarea>
+                    </p>
+                </div>
+                <div class="preorder__form active">
+                    <form action="no_action">
+                        <p class="form__title">Ваше имя<br><br>
+                            <input type="text" size="50"/>
+                        </p>
+                        <p class="form__title">Электронная почта<br><br>
                             <input type="text" size="50"/>
                         </p>
                     </form>
+                    <p class="form__title">Комментарий к заявке<br><br>
+                        <textarea></textarea>
+                    </p>
+                </div>
+                <div class="preorder__form">
+                    <p class="life__text">
+                        Система управления «УПРАВДОМ» — это автоматизированный комплекс упревления всеми видами отопления,
+                        кондиционирования, вентиляции, увлажнения, осушения в помещении, который объединяет все устройства в единую систему,
+                        поддерживающую самый комфортный режим существования. Система управления климатом, объединяясь с другими системами умного дома
+                        «УПРАВДОМ» дает высшую степень комфорта пребывания в дома.
+                    </p>
                 </div>
                 <a class="order" href="#">
                     <p class="order__title">Оформить предзаказ</p>

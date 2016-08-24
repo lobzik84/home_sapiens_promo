@@ -19,4 +19,11 @@ $(function () {
             scrollTop: $(".preorder").offset().top
         }, 500);
     });
+
+    $('#tabs').on('click', 'li:not(.active)', function () {
+        $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.preorder').find('.preorder__form').removeClass('active').eq($(this).index()).addClass('active');
+    });
+
 });
