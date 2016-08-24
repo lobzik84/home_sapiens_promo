@@ -901,8 +901,6 @@ footer {
 .preorder__form .life__text {
   color: #000000;
   margin-top: 0px;
-  padding-top: 100px;
-  width: 100%;
 }
 .preorder__form.active {
   display: block;
