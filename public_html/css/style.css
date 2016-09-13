@@ -708,6 +708,19 @@ header {
   letter-spacing: 8px;
   padding-top: 5px;
 }
+.enter {
+  display: inline-block;
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  float: right;
+  position: relative;
+  top: -26px;
+  padding-right: 130px;
+}
+.enter:hover {
+  text-decoration: underline;
+}
 footer {
   background: #333333;
   color: #ffffff;

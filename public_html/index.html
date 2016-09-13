@@ -14,6 +14,9 @@
                 <header>
                     <div class="header__title">Управдом</div>
                     <div class="header__subtitle">Интернет</div>
+                    <a class="enter" href="https://moidom.molnet.ru/home_sapiens_web/index2.html">
+                        Войти в личный кабинет
+                    </a>
                 </header>
                 <div class="block__top_img"></div>
                 <div class="block__cont">
@@ -158,16 +161,16 @@
                     </p>
                 </div>
                 <div class="preorder__form active">
-                    <form action="no_action">
+                    <form name="feedbackform" method="post">
                         <p class="form__title">Ваше имя<br><br>
-                            <input type="text" size="50"/>
+                            <input type="text" size="50" name="Title" value=""/>
                         </p>
                         <p class="form__title">Электронная почта<br><br>
-                            <input type="text" size="50"/>
+                            <input type="text" size="50" name="Title" value=""/>
                         </p>
                     </form>
-                    <p class="form__title">Комментарий к заявке<br><br>
-                        <textarea></textarea>
+                    <p id="fb-form--text" class="form__title">Комментарий к заявке<br><br>
+                        <textarea name="Text"></textarea>
                     </p>
                 </div>
                 <div class="preorder__form">
@@ -180,10 +183,12 @@
                         Заказчиками компании являются структуры федеральных и региональных органов власти, а также различные государственные и коммерческие организации. Компания располагает всеми лицензиями, необходимыми для работы в рамках российского законодательства (телематические услуги связи, производство средств защиты конфиденциальной информации), а также собственной сертифицированной серверной площадкой для разработки и эксплуатации проектов.
                     </p>
                 </div>
-                <a class="order" href="#">
-                    <p class="order__title">Оформить предзаказ</p>
-                    <p class="order__price">за 20 000 руб.</p>
-                </a>
+                <form id="order">
+                    <a class="order" href="#" onclick="document.getElementById('order').submit()">
+                        <p class="order__title">Оформить предзаказ</p>
+                        <p class="order__price">за 20 000 руб.</p>
+                    </a>
+                </form>
             </div>
         </main>
         <footer>
