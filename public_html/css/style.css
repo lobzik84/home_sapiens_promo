@@ -1083,7 +1083,6 @@ video {
 .sensors {
   color: #000000;
   background: #f7f8fb;
-  text-transform: uppercase;
   text-align: center;
   padding-bottom: 115px;
 }
@@ -1107,18 +1106,19 @@ video {
 }
 .sensors__col {
   display: inline-block;
-  font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
   vertical-align: top;
-  font-size: 18px;
+  font-size: 22px;
   width: 100%;
 }
 .sensors__col_item {
   display: inline-block;
   text-align: center;
+  vertical-align: top;
   padding-top: 60px;
   margin-bottom: 60px;
   line-height: 27px;
-  width: 20%;
+  width: 18%;
 }
 .vid {
   background: url(../images/sensors_block/video.png) no-repeat center top;
