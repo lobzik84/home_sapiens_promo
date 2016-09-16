@@ -12,14 +12,6 @@
         <main>
             <div class="block__bg_top">
                 <header>
-                    <div class="header__title">Управдом</div>
-                    <div class="header__subtitle">Интернет</div>
-                    <a class="enter" href="https://moidom.molnet.ru/home_sapiens_web/index2.html">
-                        Войти в личный кабинет
-                    </a>
-                </header>
-                <div class="block__top_img"></div>
-                <div class="block__cont">
                     <nav class="main__nav">
                         <ul class="main__nav_list">
                             <li class="main__nav_item">
@@ -32,22 +24,26 @@
                                 <a class="main__nav_link life__s" href="#">Жизненные ситуации</a>
                             </li>
                             <li class="main__nav_item">
-                                <a class="main__nav_link ord" href="#">Оформить предзаказ</a>
+                                <a class="main__nav_link ord" href="#">Приобретение</a>
                             </li>
                         </ul>
                     </nav>
-
+                    <a class="enter" href="https://moidom.molnet.ru/home_sapiens_web/index2.html">
+                        Войти в личный кабинет
+                    </a>
+                </header>
+                <div class="block__top_img"></div>
+                <div class="block__cont">
                     <div class="block__top">
-                        <div class="block__title">Управдом-интернет</div>
+                        <div class="header__title">Управдом</div>
+                        <div class="header__subtitle">Интернет</div>
                         <div class="block__text">
-                            Система-мониторинг основных климатических и энергетических показателей,
-                            оповещения при выходе характеристик из границ безопасных диапазонов,
-                            управления ресурсами и элементами, оптимизация экономики эксплуатации, 
-                            повышения комфортности и уровня безопасности жилища.
+                            cистема мониторинга среды, аварийного оповещения,
+                            <br>
+                            управления элементами и обеспечения безопасности жилища.
                         </div>
-                        <a class="order" href="#">
-                            <p class="order__title">Оформить предзаказ</p>
-                            <p class="order__price">за 20 000 руб.</p>
+                        <a class="order__top" href="#">
+                            <p class="order__title">Узнал, предупредил, сберёг</p>
                         </a>
                     </div>
                 </div>
@@ -57,7 +53,7 @@
             </div>
             <div class="sensors">
                 <div class="title">Датчики и устройства управления</div>
-                <div class="sensors__img"></div>
+                <!--div class="sensors__img"></div-->
                 <div class="sensors__block">
                     <ul class="sensors__col">
                         <li class="sensors__col_item vid">Видеонаблюдение</li>
@@ -65,15 +61,11 @@
                         <li class="sensors__col_item water">Затопление</li>
                         <li class="sensors__col_item lamp">2 управляемые лампы</li>
                         <li class="sensors__col_item wifi">домашний wi-fi</li>
-                    </ul>
-                    <ul class="sensors__col">
                         <li class="sensors__col_item temp">Температура</li>
                         <li class="sensors__col_item door">Открытая дверь</li>
                         <li class="sensors__col_item motion">Движение</li>
                         <li class="sensors__col_item socket">Управляемая розетка</li>
                         <li class="sensors__col_item work">6 часов автономной работы</li>
-                    </ul>
-                    <ul class="sensors__col">
                         <li class="sensors__col_item wet">Влажность</li>
                         <li class="sensors__col_item smoke">Задымление</li>
                         <li class="sensors__col_item sound">Звук</li>
@@ -148,30 +140,30 @@
                     </ul>
                 </nav>
                 <div class="preorder__form">
-                    <form action="no_action">
+                    <form action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
                         <p class="form__title">Ваше имя<br><br>
-                            <input type="text" size="50"/>
+                            <input type="text" size="50" name="Title" value=""/>
                         </p>
                         <p class="form__title">Электронная почта<br><br>
-                            <input type="text" size="50"/>
+                            <input type="text" size="50" name="Mail" value=""/>
+                        </p>
+                        <p id="fb-form--text" class="form__title">Ваш вопрос<br><br>
+                            <textarea name="Text"></textarea>
                         </p>
                     </form>
-                    <p class="form__title">Ваш вопрос<br><br>
-                        <textarea></textarea>
-                    </p>
                 </div>
                 <div class="preorder__form active">
-                    <form name="feedbackform" method="post">
+                    <form action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
                         <p class="form__title">Ваше имя<br><br>
                             <input type="text" size="50" name="Title" value=""/>
                         </p>
                         <p class="form__title">Электронная почта<br><br>
-                            <input type="text" size="50" name="Title" value=""/>
+                            <input type="text" size="50" name="Mail" value=""/>
+                        </p>
+                        <p id="fb-form--text" class="form__title">Комментарий к заявке<br><br>
+                            <textarea name="Text"></textarea>
                         </p>
                     </form>
-                    <p id="fb-form--text" class="form__title">Комментарий к заявке<br><br>
-                        <textarea name="Text"></textarea>
-                    </p>
                 </div>
                 <div class="preorder__form">
                     <p class="life__text">
@@ -184,9 +176,9 @@
                     </p>
                 </div>
                 <form id="order">
-                    <a class="order" href="#" onclick="document.getElementById('order').submit()">
+                    <a class="order" href="#" onclick="$('order').submit()">
                         <p class="order__title">Оформить предзаказ</p>
-                        <p class="order__price">за 20 000 руб.</p>
+                        <p class="order__price">за 30 000 руб.</p>
                     </a>
                 </form>
             </div>

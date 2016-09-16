@@ -687,14 +687,12 @@ strong {
 .arimo-regular {
   font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
 }
-header {
+.header__title {
   font-family: 'getvoip_grotesque', Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-}
-.header__title {
-  font-size: 31px;
+  font-size: 48px;
   letter-spacing: 2px;
 }
 .header__title:before {
@@ -704,7 +702,11 @@ header {
   height: 40px;
 }
 .header__subtitle {
-  font-size: 11px;
+  font-family: 'getvoip_grotesque', Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
   letter-spacing: 8px;
   padding-top: 5px;
 }
@@ -715,11 +717,18 @@ header {
   text-decoration: none;
   float: right;
   position: relative;
-  top: -26px;
-  padding-right: 130px;
-}
-.enter:hover {
-  text-decoration: underline;
+  text-align: center;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -khtml-border-radius: 40px;
+  border-radius: 40px;
+  top: 22px;
+  margin-right: 40px;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  width: 260px;
+  background-color: #03a9f4;
 }
 footer {
   background: #333333;
@@ -781,7 +790,8 @@ footer {
 }
 .block__text {
   font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
-  padding-top: 25px;
+  text-align: center;
+  padding-top: 50px;
   font-size: 18px;
   line-height: 28px;
 }
@@ -824,6 +834,30 @@ footer {
 .order__price {
   font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
   padding: 8px 0 0 44px;
+}
+.order__top {
+  display: block;
+  color: #ffffff;
+  background: #0d9e27;
+  text-decoration: none;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -khtml-border-radius: 40px;
+  border-radius: 40px;
+  cursor: default;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 29px;
+  width: 550px;
+  height: 85px;
+  line-height: 85px;
+}
+.order__top .order__title {
+  text-transform: uppercase;
+  font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 0 !important;
 }
 .preorder {
   text-align: center;
@@ -979,9 +1013,10 @@ video {
 .main__nav {
   font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
   text-align: center;
-  text-transform: uppercase;
+  display: inline-block;
   font-size: 16px;
-  margin-top: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
 }
 .main__nav_item {
   display: inline-block;
@@ -1059,7 +1094,6 @@ video {
   padding: 70px 0 65px 0;
 }
 .sensors__block {
-  display: inline-block;
   vertical-align: top;
   margin: auto;
 }
@@ -1073,62 +1107,63 @@ video {
 }
 .sensors__col {
   display: inline-block;
-  text-align: left;
   font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
   vertical-align: top;
   font-size: 18px;
-  width: 170px;
-  padding-left: 40px;
+  width: 100%;
 }
 .sensors__col_item {
+  display: inline-block;
+  text-align: center;
   padding-top: 60px;
   margin-bottom: 60px;
   line-height: 27px;
+  width: 20%;
 }
 .vid {
-  background: url(../images/sensors_block/video.png) no-repeat left top;
+  background: url(../images/sensors_block/video.png) no-repeat center top;
 }
 .volt {
-  background: url(../images/sensors_block/volt.png) no-repeat left top;
+  background: url(../images/sensors_block/volt.png) no-repeat center top;
 }
 .water {
-  background: url(../images/sensors_block/water.png) no-repeat left top;
+  background: url(../images/sensors_block/water.png) no-repeat center top;
 }
 .lamp {
-  background: url(../images/sensors_block/lamp.png) no-repeat left top;
+  background: url(../images/sensors_block/lamp.png) no-repeat center top;
 }
 .wifi {
-  background: url(../images/sensors_block/wifi.png) no-repeat left top;
+  background: url(../images/sensors_block/wifi.png) no-repeat center top;
 }
 .temp {
-  background: url(../images/sensors_block/temp.png) no-repeat left top;
+  background: url(../images/sensors_block/temp.png) no-repeat center top;
 }
 .door {
-  background: url(../images/sensors_block/door.png) no-repeat left top;
+  background: url(../images/sensors_block/door.png) no-repeat center top;
 }
 .motion {
-  background: url(../images/sensors_block/motion.png) no-repeat left top;
+  background: url(../images/sensors_block/motion.png) no-repeat center top;
 }
 .socket {
-  background: url(../images/sensors_block/socket.png) no-repeat left top;
+  background: url(../images/sensors_block/socket.png) no-repeat center top;
 }
 .work {
-  background: url(../images/sensors_block/work.png) no-repeat left top;
+  background: url(../images/sensors_block/work.png) no-repeat center top;
 }
 .wet {
-  background: url(../images/sensors_block/wet.png) no-repeat left top;
+  background: url(../images/sensors_block/wet.png) no-repeat center top;
 }
 .smoke {
-  background: url(../images/sensors_block/smoke.png) no-repeat left top;
+  background: url(../images/sensors_block/smoke.png) no-repeat center top;
 }
 .sound {
-  background: url(../images/sensors_block/sound.png) no-repeat left top;
+  background: url(../images/sensors_block/sound.png) no-repeat center top;
 }
 .weather {
-  background: url(../images/sensors_block/weather.png) no-repeat left top;
+  background: url(../images/sensors_block/weather.png) no-repeat center top;
 }
 .safety {
-  background: url(../images/sensors_block/safety.png) no-repeat left top;
+  background: url(../images/sensors_block/safety.png) no-repeat center top;
 }
 .device {
   height: 780px;
@@ -1193,9 +1228,6 @@ body {
   .block__cont {
     width: 1128px;
   }
-  .sensors__col {
-    width: 190px;
-  }
   .device__block {
     width: 552px;
     padding: 170px 50px 0 30px;
@@ -1217,9 +1249,6 @@ body {
   .block__cont {
     width: 1200px;
   }
-  .sensors__col {
-    width: 200px;
-  }
   .device__block {
     width: 552px;
     padding: 170px 50px 0 30px;
@@ -1240,9 +1269,6 @@ body {
   }
   .block__cont {
     width: 1338px;
-  }
-  .sensors__col {
-    width: 220px;
   }
   .device__block {
     width: 552px;
@@ -1269,9 +1295,6 @@ body {
   }
   .block__cont {
     width: 1410px;
-  }
-  .sensors__col {
-    width: 220px;
   }
   .device__block {
     width: 552px;
