@@ -1124,7 +1124,10 @@ video {
 }
 .sensors__col_hint {
   position: relative;
+  display: none;
   vertical-align: top;
+  font-size: 18px;
+  border: 1px solid #dddddd;
   top: -175px;
   width: 100%;
   height: 150px;
