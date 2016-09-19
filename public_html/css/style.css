@@ -1116,17 +1116,36 @@ video {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  margin-bottom: 60px;
+  cursor: default;
+  height: 150px;
+  margin-bottom: 40px;
   line-height: 27px;
   width: 18%;
 }
 .sensors__col_hint {
   position: relative;
-  display: none;
-  top: -100px;
+  vertical-align: top;
+  top: -175px;
   width: 100%;
   height: 150px;
   background: #ffffff;
+}
+.sensors__col_hint p {
+  display: block;
+  padding-top: 40px;
+}
+.status__icon {
+  height: 70px;
+  line-height: 70px;
+}
+.status__icon img {
+  vertical-align: middle;
+}
+.status__text {
+  height: 80px;
+}
+.status__text p {
+  display: block;
 }
 /*.vid {
     background: url(../images/sensors_block/video.png) no-repeat center top;
@@ -1191,14 +1210,14 @@ video {
 .device__link {
   font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
   color: #32579a;
+  cursor: pointer;
 }
 .device__img {
   position: relative;
   display: inline-block;
-  top: 90px;
+  top: -45px;
   width: 480px;
   height: 480px;
-  background: url(../images/device.png) no-repeat center center;
   background-size: 480px;
 }
 .life {

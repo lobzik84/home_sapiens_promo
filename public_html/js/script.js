@@ -26,4 +26,21 @@ $(function () {
                 .closest('.preorder').find('.preorder__form').removeClass('active').eq($(this).index()).addClass('active');
     });
 
+    $('.sensors__col_item').each(function () {
+        $(this).hover(function () {
+            $('.sensors__col_hint', this).fadeIn('fast');
+        },
+                function () {
+                    $('.sensors__col_hint').fadeOut('fast');
+                });
+    });
+    $('.interface').hover(function () {
+        $('#mobile').hide();
+        $('#web').show();
+    },
+            function () {
+                $('#mobile').show();
+                $('#web').hide();
+            });
+
 });
