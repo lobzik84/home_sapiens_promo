@@ -1,6 +1,5 @@
 .device {
     height: 780px;
-    .ttu;
     .ta-c;
 }
 .device__block {
@@ -8,15 +7,34 @@
     .arimo-regular;
     .ta-l;
     .inline-b;
-    font-size: 32px;
     width: 450px;
-    line-height: 45px;
+    line-height: 35px;
     padding: 170px 5px 0 0;
+    p {
+        font-size: 32px;
+    }
+}
+.device__block_list {
+    padding-top: 20px;
+}
+.device__block_item {
+    .inline-b;    
+    padding-left: 20px;
+    
 }
 .device__link {
-    .arimo-bold;
-    .blue;
+    .arimo-regular;
     .pointer;
+    .rounded-corners(10px); 
+    font-size: 18px;
+    padding: 7px 15px;
+    border: 2px solid #03a9f4;
+    color: #03a9f4;
+    &:hover {
+        .white;
+        .blbc;
+        border: 2px solid @blue;
+    }
 }
 .device__img {
     .relative;
