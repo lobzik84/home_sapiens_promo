@@ -1,5 +1,5 @@
 .device {
-    height: 780px;
+    height: 720px;
     .ta-c;
 }
 .device__block {
@@ -7,11 +7,21 @@
     .arimo-regular;
     .ta-l;
     .inline-b;
-    width: 450px;
-    line-height: 35px;
-    padding: 170px 5px 0 0;
+    //width: 450px;
+    line-height: 40px;
+    padding: 250px 5px 0 0;
     p {
         font-size: 32px;
+    }
+    .active {
+        .arimo-regular;
+        .pointer;
+        .rounded-corners(10px); 
+        .white;
+        .blbc;
+        font-size: 18px;
+        padding: 7px 15px;
+        border: 2px solid @blue;
     }
 }
 .device__block_list {
@@ -20,7 +30,10 @@
 .device__block_item {
     .inline-b;    
     padding-left: 20px;
-    
+    &:first-child {
+        padding-left: 0px;
+    }
+
 }
 .device__link {
     .arimo-regular;
@@ -36,6 +49,7 @@
         border: 2px solid @blue;
     }
 }
+
 .device__img {
     .relative;
     .inline-b;
