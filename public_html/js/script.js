@@ -38,14 +38,17 @@ $(function () {
             }
     );
 
-    $('.interface').hover(function () {
+    $('.web').click(function () {
         $('#mobile').hide();
         $('#web').show();
         $('.device__link').removeClass('active');
-    },
-            function () {
-                $('#mobile').show();
-                $('#web').hide();
-                $('.device__link').last().addClass('active');
-            });
+        $(this).addClass('active');
+    });
+    $('.mobile').click(function () {
+        $('#mobile').show();
+        $('#web').hide();
+        $('.device__link').removeClass('active');
+        $(this).addClass('active');
+    });
+
 });

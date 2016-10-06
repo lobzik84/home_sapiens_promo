@@ -728,7 +728,18 @@ strong {
   font-size: 16px;
   height: 50px;
   line-height: 50px;
-  width: 260px;
+}
+.enter:hover {
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #03a9f4;
+}
+.enter__title {
+  display: block;
+  background: url(../images/enter.png) no-repeat 20px center;
+  padding: 0 25px 0 50px;
 }
 footer {
   background: #333333;
@@ -802,14 +813,14 @@ footer {
   color: #ffffff;
   background: #0d9e27;
   text-decoration: none;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -khtml-border-radius: 40px;
-  border-radius: 40px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
   margin-top: 60px;
   font-size: 21px;
-  width: 345px;
-  height: 85px;
+  width: 384px;
+  height: 98px;
 }
 .order:hover {
   -webkit-transition-duration: 0.3s;
@@ -823,13 +834,13 @@ footer {
   font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
   text-align: left;
   font-size: 20px;
-  padding: 15px 0 0 45px;
+  padding: 19px 0 0 63px;
 }
 .order__price {
   font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 38px;
-  padding: 4px 0 0 0;
+  padding: 8px 0 0 0;
 }
 .order__top {
   display: block;
@@ -1068,7 +1079,7 @@ video {
   -webkit-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  background: #0d9e27;
+  background: #32579a;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -1244,6 +1255,10 @@ video {
   color: #03a9f4;
 }
 .device__link:hover {
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   color: #ffffff;
   background: #32579a;
   border: 2px solid #32579a;
@@ -1281,15 +1296,11 @@ body {
   max-width: 1410px;
 }
 .block__cont {
-  width: 942px;
   margin: auto;
 }
 @media all and (min-width: 1220px) and (max-width: 1280px) {
   .main__nav_item {
     padding-right: 30px;
-  }
-  .block__cont {
-    width: 1128px;
   }
   .device__block {
     padding: 250px 50px 0 30px;
@@ -1304,9 +1315,6 @@ body {
   .main__nav_item {
     padding-right: 40px;
   }
-  .block__cont {
-    width: 1200px;
-  }
   .device__block {
     padding: 250px 50px 0 30px;
   }
@@ -1320,9 +1328,6 @@ body {
   .main__nav_item {
     padding-right: 40px;
   }
-  .block__cont {
-    width: 1338px;
-  }
   .device__block {
     padding: 250px 50px 0 30px;
   }
@@ -1334,9 +1339,6 @@ body {
 @media all and (min-width: 1601px) {
   .main__nav_item {
     padding-right: 40px;
-  }
-  .block__cont {
-    width: 1410px;
   }
   .device__block {
     padding: 250px 50px 0 30px;
