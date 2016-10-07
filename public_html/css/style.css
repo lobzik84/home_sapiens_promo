@@ -1061,6 +1061,7 @@ video {
   border-radius: 10px;
   cursor: pointer;
   padding: 15px 23.5px 15px 23.5px;
+  margin-bottom: 5px;
 }
 .nav__item:hover {
   background: #32579a;
@@ -1287,14 +1288,14 @@ video {
   padding: 110px 0 65px 0;
 }
 .life__text {
-  text-align: left;
+  text-align: justify;
   font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 30px;
   margin: auto;
-  margin-top: 230px;
-  width: 780px;
+  margin-top: 170px;
+  width: 850px;
 }
 body {
   display: block;

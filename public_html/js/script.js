@@ -51,4 +51,111 @@ $(function () {
         $(this).addClass('active');
     });
 
+
+
+    $('#warm').show();
+    $('#volt').hide();
+    $('#water').hide();
+    $('#cam').hide();
+    $('#know').hide();
+    $('#window').hide();
+    $('#thief').hide();
+    $('#radio').hide();
+    $('.warm').click(function () {
+        $('.nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#warm').show();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').hide();
+    });
+    $('.volt').click(function () {
+        $('.nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#warm').hide();
+        $('#volt').show();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').hide();
+    });
+    $('.water').click(function () {
+        $('.nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').show();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').hide();
+    });
+    $('.cam').click(function () {
+        $('.nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').show();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').hide();
+    });
+    $('.know').click(function () {
+        $('.nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').show();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').hide();
+    });
+    $('.window').click(function () {
+        $('.nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').show();
+        $('#thief').hide();
+        $('#radio').hide();
+    });
+    $('.thief').click(function () {
+        $('.nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').show();
+        $('#radio').hide();
+    });
+    $('.radio').click(function () {
+        $('.nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').show();
+    });
+
 });
