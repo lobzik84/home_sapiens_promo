@@ -1,4 +1,5 @@
 $(function () {
+
     $(".sens").click(function () {
         $('html, body').animate({
             scrollTop: $(".sensors").offset().top
@@ -51,9 +52,8 @@ $(function () {
         $(this).addClass('active');
     });
 
-
-
-    $('#warm').show();
+    $('#start').show();
+    $('#warm').hide();
     $('#volt').hide();
     $('#water').hide();
     $('#cam').hide();
@@ -61,9 +61,13 @@ $(function () {
     $('#window').hide();
     $('#thief').hide();
     $('#radio').hide();
+    $('#easy').hide();
+    $('#wifi').hide();
+    $('#setup').hide();
     $('.warm').click(function () {
-        $('.nav__item').removeClass('active');
+        $('.life .nav__item').removeClass('active');
         $(this).addClass('active');
+        $('#start').hide();
         $('#warm').show();
         $('#volt').hide();
         $('#water').hide();
@@ -72,10 +76,14 @@ $(function () {
         $('#window').hide();
         $('#thief').hide();
         $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').hide();
     });
     $('.volt').click(function () {
-        $('.nav__item').removeClass('active');
+        $('.life .nav__item').removeClass('active');
         $(this).addClass('active');
+        $('#start').hide();
         $('#warm').hide();
         $('#volt').show();
         $('#water').hide();
@@ -84,10 +92,14 @@ $(function () {
         $('#window').hide();
         $('#thief').hide();
         $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').hide();
     });
     $('.water').click(function () {
-        $('.nav__item').removeClass('active');
+        $('.life .nav__item').removeClass('active');
         $(this).addClass('active');
+        $('#start').hide();
         $('#warm').hide();
         $('#volt').hide();
         $('#water').show();
@@ -96,10 +108,14 @@ $(function () {
         $('#window').hide();
         $('#thief').hide();
         $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').hide();
     });
     $('.cam').click(function () {
-        $('.nav__item').removeClass('active');
+        $('.life .nav__item').removeClass('active');
         $(this).addClass('active');
+        $('#start').hide();
         $('#warm').hide();
         $('#volt').hide();
         $('#water').hide();
@@ -108,10 +124,14 @@ $(function () {
         $('#window').hide();
         $('#thief').hide();
         $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').hide();
     });
     $('.know').click(function () {
-        $('.nav__item').removeClass('active');
+        $('.life .nav__item').removeClass('active');
         $(this).addClass('active');
+        $('#start').hide();
         $('#warm').hide();
         $('#volt').hide();
         $('#water').hide();
@@ -120,10 +140,14 @@ $(function () {
         $('#window').hide();
         $('#thief').hide();
         $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').hide();
     });
     $('.window').click(function () {
-        $('.nav__item').removeClass('active');
+        $('.life .nav__item').removeClass('active');
         $(this).addClass('active');
+        $('#start').hide();
         $('#warm').hide();
         $('#volt').hide();
         $('#water').hide();
@@ -132,10 +156,14 @@ $(function () {
         $('#window').show();
         $('#thief').hide();
         $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').hide();
     });
     $('.thief').click(function () {
-        $('.nav__item').removeClass('active');
+        $('.life .nav__item').removeClass('active');
         $(this).addClass('active');
+        $('#start').hide();
         $('#warm').hide();
         $('#volt').hide();
         $('#water').hide();
@@ -144,10 +172,14 @@ $(function () {
         $('#window').hide();
         $('#thief').show();
         $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').hide();
     });
     $('.radio').click(function () {
-        $('.nav__item').removeClass('active');
+        $('.life .nav__item').removeClass('active');
         $(this).addClass('active');
+        $('#start').hide();
         $('#warm').hide();
         $('#volt').hide();
         $('#water').hide();
@@ -156,6 +188,57 @@ $(function () {
         $('#window').hide();
         $('#thief').hide();
         $('#radio').show();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').hide();
+    });
+    $('.easy').click(function () {
+        $('.life .nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#start').hide();
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').hide();
+        $('#easy').show();
+        $('#wifi').hide();
+        $('#setup').hide();
+    });
+    $('.wifi').click(function () {
+        $('.life .nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#start').hide();
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').show();
+        $('#setup').hide();
+    });
+    $('.setup').click(function () {
+        $('.life .nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#start').hide();
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').show();
     });
 
 });

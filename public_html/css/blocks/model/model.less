@@ -1,5 +1,6 @@
 .model__img {
     .absolute;
+    z-index: 1;
     width: 1008px;
     height: 619px;
     background: url(../images/models.png) no-repeat center center;
@@ -7,14 +8,18 @@
 
 }
 .model__order {
+    .relative;
+    z-index: 9;
     width: 42%;
+    min-width: 500px;
     max-width: 630px;
     padding-left: 660px;
-    padding-top: 145px;
+    padding-top: 86px;
+
 }
 .model__text {
     .black;
     .arimo-regular;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 43px;
 }
