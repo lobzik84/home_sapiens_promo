@@ -39,17 +39,17 @@ $(function () {
             }
     );
 
-    $('.web').click(function () {
+    $('.web').hover(function () {
         $('#mobile').hide();
         $('#web').show();
-        $('.device__link').removeClass('active');
-        $(this).addClass('active');
+        //$('.device__link').removeClass('active');
+        //$(this).addClass('active');
     });
-    $('.mobile').click(function () {
+    $('.mobile').hover(function () {
         $('#mobile').show();
         $('#web').hide();
-        $('.device__link').removeClass('active');
-        $(this).addClass('active');
+        //$('.device__link').removeClass('active');
+        //$(this).addClass('active');
     });
 
     $('#start').show();
@@ -64,6 +64,22 @@ $(function () {
     $('#easy').hide();
     $('#wifi').hide();
     $('#setup').hide();
+    $('.overview').click(function () {
+        $('.life .nav__item').removeClass('active');
+        $(this).addClass('active');
+        $('#start').show();
+        $('#warm').hide();
+        $('#volt').hide();
+        $('#water').hide();
+        $('#cam').hide();
+        $('#know').hide();
+        $('#window').hide();
+        $('#thief').hide();
+        $('#radio').hide();
+        $('#easy').hide();
+        $('#wifi').hide();
+        $('#setup').hide();
+    });
     $('.warm').click(function () {
         $('.life .nav__item').removeClass('active');
         $(this).addClass('active');
