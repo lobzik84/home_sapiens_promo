@@ -1,20 +1,23 @@
+.model__cont {
+    
+}
 .model__img {
     .absolute;
+    .inline-b;
     z-index: 1;
     width: 1008px;
     height: 619px;
-    background: url(../images/models.png) no-repeat center center;
+    //background: url(../images/models.png) no-repeat center center;
     top: 830px;
-
 }
 .model__order {
-    .relative;
+    .inline-b;
     z-index: 9;
     width: 42%;
     min-width: 500px;
     max-width: 630px;
     padding-left: 660px;
-    padding-top: 86px;
+    padding-top: 128px;
 }
 .model__text {
     .black;
@@ -22,18 +25,22 @@
     font-size: 18px;
     line-height: 43px;
 }
-
 .model__list {
-      .arimo-regular;
-    list-style: disc;
-    padding-left: 30px;
+    .arimo-regular;
+    list-style: none;
     font-size: 16px;
 }
+.model__item {
+    background: url(../images/list.png) no-repeat left center;
+    padding-left: 30px;
+}
 .model__hint {
-     .arimo-regular;
-     .ta-c;
-     .rounded-corners(10px);
-     font-size: 16px;
-     padding: 15px 5px;
-     background-color: #03a9f4;
+    .arimo-regular;
+    .ta-c;
+    .rounded-corners(10px);
+    font-size: 16px;
+    padding: 22px 5px;
+    background-color: #03a9f4;
+    width: 90%;
+    margin-top: 35px;
 }
