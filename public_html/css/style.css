@@ -1438,13 +1438,25 @@ body {
 }
 .model__text {
   color: #000000;
-  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
   line-height: 43px;
 }
 .model__list {
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
   list-style: disc;
   padding-left: 30px;
-  font-size: 20px;
+  font-size: 16px;
+}
+.model__hint {
+  font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
+  text-align: center;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 15px 5px;
+  background-color: #03a9f4;
 }
 /*# sourceMappingURL=style.css.map */

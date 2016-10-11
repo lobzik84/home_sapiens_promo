@@ -20,13 +20,11 @@ $(function () {
             scrollTop: $(".preorder").offset().top
         }, 500);
     });
-
     $('#tabs').on('click', 'li:not(.active)', function () {
         $(this)
                 .addClass('active').siblings().removeClass('active')
                 .closest('.preorder').find('.preorder__form').removeClass('active').eq($(this).index()).addClass('active');
     });
-
     $('.sensors__col_item').hover(function () {
         var k = this;
         hoverTimer = setTimeout(function () {
@@ -38,7 +36,6 @@ $(function () {
                 $('.sensors__col_hint').fadeOut('fast');
             }
     );
-
     $('.web').hover(function () {
         $('#mobile').hide();
         $('#web').show();
@@ -51,7 +48,6 @@ $(function () {
         //$('.device__link').removeClass('active');
         //$(this).addClass('active');
     });
-
     $('#start').show();
     $('#warm').hide();
     $('#volt').hide();
@@ -256,5 +252,27 @@ $(function () {
         $('#wifi').hide();
         $('#setup').show();
     });
-
+    
+    
+    $('.order').click(function (e) {
+        e.preventDefault();
+        /*var regObj = {
+            "action": "register",
+            "login": login,
+            "salt": salt,
+            "verifier": verifier,
+            "public_key": publicKey
+        }*/
+        $.ajax({
+            type: "POST",
+            url: $('.preorder__form form').attr('action'),
+            dataType: 'json',
+            crossDomain: true,
+            async: true,
+            data: $('.preorder__form form').serialize(),
+            success: function (data) {
+                console.log('send');
+            }
+        })
+    });
 });
