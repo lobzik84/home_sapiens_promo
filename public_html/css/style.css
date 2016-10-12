@@ -712,7 +712,7 @@ strong {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 64px;
   letter-spacing: 5px;
 }
 .header__title:before {
@@ -734,7 +734,7 @@ strong {
   font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
   text-align: center;
   padding-top: 25px;
-  font-size: 29px;
+  font-size: 25px;
 }
 .enter {
   display: inline-block;
@@ -1343,15 +1343,13 @@ body {
   margin: auto;
 }
 .top__img {
-  display: inline-block;
   position: absolute;
-  vertical-align: top;
-  width: 40%;
+  width: 31%;
+  min-height: 443px;
   max-width: 576px;
   top: 150px;
-}
-.top__img img {
-  width: 100%;
+  background: url(../images/hand_s.png) no-repeat center center;
+  background-size: 100%;
 }
 @media all and (min-width: 1220px) and (max-width: 1280px) {
   .main__nav_item {
