@@ -252,27 +252,95 @@ $(function () {
         $('#wifi').hide();
         $('#setup').show();
     });
-    
-    
-    $('.order').click(function (e) {
+
+
+    $('#quest').validate({
+        rules: {
+            Title: {
+                required: true,
+            },
+            Mail: {
+                required: true,
+                email: true
+            },
+            Text: {
+                required: true,
+            }
+        },
+    });
+    $('#ord').validate({
+        rules: {
+            Title: {
+                required: true,
+            },
+            Mail: {
+                required: true,
+                email: true
+            },
+            Text: {
+                required: true,
+            }
+        },
+    });
+
+
+    $('#order').click(function (e) {
         e.preventDefault();
-        /*var regObj = {
-            "action": "register",
-            "login": login,
-            "salt": salt,
-            "verifier": verifier,
-            "public_key": publicKey
-        }*/
+        $('#ord').validate({
+        rules: {
+        Title: {
+        required: true,
+        },
+                Mail: {
+                required: true,
+                        email: true
+                },
+                Text: {
+                required: true,
+                }
+        },
+//                messages: {
+//                Title: "Please specify your name",
+//                        Mail: {
+//                        required: "We need your email address to contact you",
+//                                email: "Your email address must be in the format of name@domain.com"
+//                        }
+//                }
+        submitHandler: function (form) {
         $.ajax({
             type: "POST",
             url: $('.preorder__form form').attr('action'),
-            dataType: 'json',
+            dataType: 'html',
             crossDomain: true,
             async: true,
             data: $('.preorder__form form').serialize(),
             success: function (data) {
-                console.log('send');
+                swal({
+                    title: 'Письмо отправлено!',
+                    animation: false
+                })
             }
         })
+        }
+    });
+});
+$('#question').click(function (e) {
+    e.preventDefault();
+    validate();
+    $.ajax({
+    type: "POST",
+            url: $('.preorder__form form').attr('action'),
+            dataType: 'html',
+            crossDomain: true,
+            async: true,
+            data: $('.preorder__form form').serialize(),
+            success: function (data) {
+                swal({
+                    title: 'Письмо отправлено!',
+                    animation: false
+                })
+
+            }
+    })
     });
 });

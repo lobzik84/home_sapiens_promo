@@ -5,7 +5,10 @@
         <title>HomeSapiens</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="js/swal.js"></script>
+        <script type="text/javascript" src="js/validate.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
@@ -33,12 +36,10 @@
                     </a>
                 </header>
                 <div class="top__img">
-                    <!--img src="images/hand.png" alt="pic"-->
                 </div>
                 <div class="block__cont">
                     <div class="block__top">
                         <div class="header__title">Управдом</div>
-                        <!--div class="header__subtitle">Интернет</div-->
                         <div class="header__title_bottom">
                             Узнал, предупредил, помог, сберёг
                         </div>
@@ -74,7 +75,6 @@
             </div>
             <div class="sensors">
                 <div class="title">Датчики и устройства управления</div>
-                <!--div class="sensors__img"></div-->
                 <div class="sensors__block">
                     <ul class="sensors__col">
                         <li class="sensors__col_item">
@@ -236,7 +236,6 @@
             </div>
             <div class="block__bg_life">
                 <div class="life">
-                    <!--div class="title">Жизненные ситуации</div-->
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item overview active">
@@ -334,21 +333,26 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="preorder__form">
-                    <form action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
+                <div class="preorder__form question">
+                    <form id="quest" action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
                         <p class="form__title">Ваше имя<br><br>
-                            <input type="text" size="50" name="Title" value=""/>
+                            <input id="qname" type="text" size="50" name="Title" value=""/>
                         </p>
                         <p class="form__title">Электронная почта<br><br>
-                            <input type="text" size="50" name="Mail" value=""/>
+                            <input id="qname" type="text" size="50" name="Mail" value=""/>
                         </p>
                         <p id="fb-form--text" class="form__title">Ваш вопрос<br><br>
                             <textarea name="Text"></textarea>
                         </p>
                     </form>
+                    <form id="question" class="pt-40">
+                        <div class="order">
+                            <p class="order__title" style="font-size:27px;line-height:62px;">Отправить вопрос</p>
+                        </div>
+                    </form>
                 </div>
                 <div class="preorder__form active">
-                    <form action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
+                    <form id="ord" action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
                         <p class="form__title">Ваше имя<br><br>
                             <input type="text" size="50" name="Title" value=""/>
                         </p>
@@ -359,6 +363,12 @@
                             <textarea name="Text"></textarea>
                         </p>
                         <!--input class="" value="Отправить" type="submit"-->
+                    </form>
+                    <form id="order" class="pt-40">
+                        <div class="order">
+                            <p class="order__title">Оформить предзаказ за</p>
+                            <p class="order__price">30 000 рублей</p>
+                        </div>
                     </form>
                 </div>
                 <div class="preorder__form">
@@ -375,32 +385,16 @@
                         Веб-сайт: <a class="preorder__form_link" href="http://company.molnet.ru/">http://company.molnet.ru/</a>
                     </p>
                 </div>
-                <form id="order">
-                    <div class="order">
-                        <p class="order__title">Оформить предзаказ за</p>
-                        <p class="order__price">30 000 рублей</p>
-                    </div>
-                </form>
             </div>
         </main>
         <footer>
             <div class="footer__cont">
-
                 <div class="fl-l">
                     © 2016. УПРАВДОМ. <p class="footer__italic">Узнал, предупредил, помог, сберег.</p>
                 </div>                
                 <div class="fl-r">
                     «ООО ИТЦ МОЛНЕТ»
                 </div>
-                <!--div class="footer__links">
-                    <a class="link" href=""><p class="link__name">Пользовательское соглашение</p></a>
-                    <a class="link" href=""><p class="link__name">Техническая поддержка</p></a>
-                    <a class="link" href=""><p class="link__name">Разработчикам</p></a>
-                </div>
-                <div class="footer__social">
-                    <a class="link vk" href=""><p class="link__name">Вконтакте</p></a>
-                    <a class="link fb" href=""><p class="link__name">Facebook</p></a>
-                </div-->
             </div>
         </footer>
     </body>
