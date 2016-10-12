@@ -284,7 +284,7 @@ $(function () {
     });
 
 
-    $('#order').click(function (e) {
+    /*$('#order').click(function (e) {
         e.preventDefault();
         $('#ord').validate({
         rules: {
@@ -305,8 +305,8 @@ $(function () {
 //                        required: "We need your email address to contact you",
 //                                email: "Your email address must be in the format of name@domain.com"
 //                        }
-//                }
-        submitHandler: function (form) {
+//                }*/
+        $('#order').click(function (e) { {
         $.ajax({
             type: "POST",
             url: $('.preorder__form form').attr('action'),
@@ -322,11 +322,11 @@ $(function () {
             }
         })
         }
-    });
+   // });
 });
 $('#question').click(function (e) {
     e.preventDefault();
-    validate();
+    //validate();
     $.ajax({
     type: "POST",
             url: $('.preorder__form form').attr('action'),
