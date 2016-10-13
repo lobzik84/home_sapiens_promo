@@ -254,93 +254,75 @@ $(function () {
     });
 
 
-    $('#quest').validate({
-        rules: {
-            Title: {
-                required: true,
-            },
-            Mail: {
-                required: true,
-                email: true
-            },
-            Text: {
-                required: true,
-            }
-        },
-    });
-    $('#ord').validate({
-        rules: {
-            Title: {
-                required: true,
-            },
-            Mail: {
-                required: true,
-                email: true
-            },
-            Text: {
-                required: true,
-            }
-        },
-    });
+    /*$('#quest').validate({
+     rules: {
+     Title: {
+     required: true,
+     },
+     Mail: {
+     required: true,
+     email: true
+     },
+     Text: {
+     required: true,
+     }
+     },
+     });
+     $('#ord').validate({
+     rules: {
+     Title: {
+     required: true,
+     },
+     Mail: {
+     required: true,
+     email: true
+     },
+     Text: {
+     required: true,
+     }
+     },
+     });*/
 
-
-    /*$('#order').click(function (e) {
+    $('#order').click(function (e) {
         e.preventDefault();
-        $('#ord').validate({
-        rules: {
-        Title: {
-        required: true,
-        },
-                Mail: {
-                required: true,
-                        email: true
-                },
-                Text: {
-                required: true,
-                }
-        },
-//                messages: {
-//                Title: "Please specify your name",
-//                        Mail: {
-//                        required: "We need your email address to contact you",
-//                                email: "Your email address must be in the format of name@domain.com"
-//                        }
-//                }*/
-        $('#order').click(function (e) { {
+        $('#o-text').val("Заявка на предзаказ: " + $('#o-text').val());
         $.ajax({
             type: "POST",
-            url: $('.preorder__form form').attr('action'),
+            url: $('#ord').attr('action'),
             dataType: 'html',
             crossDomain: true,
             async: true,
-            data: $('.preorder__form form').serialize(),
+            data: $('#ord').serialize(),
             success: function (data) {
                 swal({
                     title: 'Письмо отправлено!',
                     animation: false
                 })
+                $('#o-name').val('');
+                $('#o-mail').val('');
+                $('#o-text').val('');
             }
         })
-        }
-   // });
-});
-$('#question').click(function (e) {
-    e.preventDefault();
-    //validate();
-    $.ajax({
-    type: "POST",
-            url: $('.preorder__form form').attr('action'),
+    });
+    $('#question').click(function (e) {
+        e.preventDefault();
+        $('#q-text').val("Вопрос по проекту УПРАВДОМ: " + $('#q-text').val());
+        $.ajax({
+            type: "POST",
+            url: $('#quest').attr('action'),
             dataType: 'html',
             crossDomain: true,
             async: true,
-            data: $('.preorder__form form').serialize(),
+            data: $('#quest').serialize(),
             success: function (data) {
                 swal({
                     title: 'Письмо отправлено!',
                     animation: false
                 })
-
+                $('#q-name').val('');
+                $('#q-mail').val('');
+                $('#q-text').val('');
             }
-    })
+        })
     });
 });
