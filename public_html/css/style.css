@@ -767,6 +767,12 @@ strong {
   background: url(../images/enter.png) no-repeat 20px center;
   padding: 0 25px 0 50px;
 }
+.error {
+  font-family: 'arimo-bolditalic', Arial, Helvetica, sans-serif;
+  display: block;
+  margin-top: 20px;
+  color: #32579a;
+}
 footer {
   background: #333333;
   color: #ffffff;

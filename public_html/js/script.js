@@ -254,34 +254,34 @@ $(function () {
     });
 
 
-    /*$('#quest').validate({
-     rules: {
-     Title: {
-     required: true,
-     },
-     Mail: {
-     required: true,
-     email: true
-     },
-     Text: {
-     required: true,
-     }
-     },
-     });
-     $('#ord').validate({
-     rules: {
-     Title: {
-     required: true,
-     },
-     Mail: {
-     required: true,
-     email: true
-     },
-     Text: {
-     required: true,
-     }
-     },
-     });*/
+    $('#quest').validate({
+        rules: {
+            Title: {
+                required: true,
+            },
+            Mail: {
+                required: true,
+                email: true
+            },
+            Text: {
+                required: true,
+            }
+        },
+    });
+    $('#ord').validate({
+        rules: {
+            Title: {
+                required: true,
+            },
+            Mail: {
+                required: true,
+                email: true
+            },
+            Text: {
+                required: true,
+            }
+        },
+    });
 
     $('#order').click(function (e) {
         e.preventDefault();
