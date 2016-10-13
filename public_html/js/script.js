@@ -285,6 +285,13 @@ $(function () {
 
     $('#order').click(function (e) {
         e.preventDefault();
+        if ($('#o-text').val().length < 3 | !($('#o-mail').val().includes("@")) | $('#o-name').val().length < 2) {
+                swal({
+                    title: 'Заполните поля формы!',
+                    animation: false
+                });
+                return;
+        }
         $('#o-text').val("Заявка на предзаказ: " + $('#o-text').val());
         $.ajax({
             type: "POST",
@@ -306,6 +313,13 @@ $(function () {
     });
     $('#question').click(function (e) {
         e.preventDefault();
+        if ($('#q-text').val().length < 3 | !($('#q-mail').val().includes("@")) | $('#q-name').val().length < 2) {
+                swal({
+                    title: 'Заполните поля формы!',
+                    animation: false
+                });
+                return;
+        }
         $('#q-text').val("Вопрос по проекту УПРАВДОМ: " + $('#q-text').val());
         $.ajax({
             type: "POST",
