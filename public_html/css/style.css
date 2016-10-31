@@ -786,6 +786,13 @@ footer {
   width: 85%;
   margin: auto;
 }
+.footer__cont a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.footer__cont a:hover {
+  text-decoration: underline;
+}
 .footer__links,
 .footer__social {
   display: inline-block;
