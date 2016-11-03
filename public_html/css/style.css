@@ -1306,7 +1306,10 @@ video {
 .device__link {
   font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
   cursor: pointer;
+  text-decoration: none;
   color: #32579a;
+  border-bottom: 2px dashed rgba(50, 87, 154, 0.7);
+  font-size: 32px;
   /*.rounded-corners(10px); 
     font-size: 18px;
     padding: 7px 15px;
@@ -1318,6 +1321,13 @@ video {
         .blbc;
         border: 2px solid @blue;
     }*/
+}
+.device__link:hover {
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-bottom: 2px dashed #32579a;
 }
 .device__img {
   position: relative;
@@ -1519,8 +1529,8 @@ body {
   text-align: center;
   font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
   vertical-align: top;
-  width: 28%;
-  font-size: 18px;
+  width: 50%;
+  font-size: 20px;
   line-height: 24px;
 }
 .advantage__bottom {

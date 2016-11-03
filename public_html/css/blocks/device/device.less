@@ -37,7 +37,14 @@
 .device__link {
     .arimo-regular;
     .pointer;
+    .tdn;
     color: @blue;
+    border-bottom: 2px dashed rgba(50, 87, 154, 0.7);
+    font-size: 32px;
+    &:hover {
+        .transition-duration(@duration:0.3s);
+        border-bottom: 2px dashed rgba(50, 87, 154, 1);
+    }
     /*.rounded-corners(10px); 
     font-size: 18px;
     padding: 7px 15px;
