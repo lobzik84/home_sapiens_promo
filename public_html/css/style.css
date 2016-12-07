@@ -1510,14 +1510,12 @@ body {
   color: #ffffff;
 }
 .advantage__green_top {
-  font-family: 'arimo-bold', Arial, Helvetica, sans-serif;
   text-align: center;
   width: 60%;
   margin: auto;
   line-height: 28px;
   font-size: 21px;
   padding-top: 25px;
-  padding-bottom: 35px;
 }
 .advantage__green_list {
   display: block;
