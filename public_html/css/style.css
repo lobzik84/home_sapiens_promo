@@ -192,9 +192,17 @@ img {
   position: absolute;
 }
 .clearfix {
-  /*&:before, &:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
-    &:after { clear: both; }
-    zoom: 1;*/
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
 }
 .list-s-none {
   list-style: none outside none;

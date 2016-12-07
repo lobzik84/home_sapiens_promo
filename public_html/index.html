@@ -2,7 +2,7 @@
 
 <html lang="ru">
     <head>
-        <title>HomeSapiens</title>
+        <title>УПРАВДОМ</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
@@ -422,6 +422,9 @@
                     </form>
                 </div>
                 <div class="preorder__form active">
+                    <p class="life__text">
+                        В комплекте поставки: контрольно-управляющий блок, 2 радиоуправляемых патрона для ламп, радиоуправляемая розетка, датчик открытия дверей/окон, датчик протечки, комплект аккумуляторов, фирменная сумка.
+                    </p>
                     <form id="ord" action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
                         <p class="form__title">Ваше имя<br><br>
                             <input id="o-name" type="text" size="50" name="Title" value=""/>
@@ -457,8 +460,8 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <div class="footer__cont">
+        <footer class="clearfix">
+            <div class="footer__cont clearfix">
                 <div class="fl-l">
                     © 2016г. УПРАВДОМ <p class="footer__italic">Узнал, предупредил, сберёг.</p>
                 </div>                
@@ -467,5 +470,56 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Molnet counter -->
+        <script language="javascript">
+            var MOLNETSessionIdKey = "MOLNETSTATSESSID";
+            var MOLNETStatistAgent = "counter.molnet.ru/ct/count";
+            function MOLNETcheckJavaSupport() {
+                var result = {javaEnabled: false, version: ''};
+                if (typeof navigator != 'undefined' && typeof navigator.javaEnabled != 'undefined')
+                    result.javaEnabled = navigator.javaEnabled();
+                else
+                    result.javaEnabled = 'unknown';
+                if (navigator.javaEnabled() && typeof java != 'undefined')
+                    result.version = java.lang.System.getProperty("java.version");
+                return result;
+            }
+            function MOLNETGetCookie(sName) {
+                if (!document.cookie)
+                    return null;
+                var aCookie = document.cookie.split("; ");
+                for (var i = 0; i < aCookie.length; i++) {
+                    var aCrumb = aCookie[i].split("=");
+                    if (sName == aCrumb[0])
+                        return unescape(aCrumb[1]);
+                }
+                return null;
+            }
+            MOLNETSessId = MOLNETGetCookie(MOLNETSessionIdKey);
+            if (MOLNETSessId == null) {
+                var vId = Math.random().toString().split(".");
+                MOLNETSessId = (new Date()).getTime().toString() + vId[1];
+                document.cookie = MOLNETSessionIdKey + "=" + MOLNETSessId + "; path=/";
+            }
+            x = screen.width;
+            y = screen.height;
+            cD = screen.colorDepth;
+            var javaCheck = MOLNETcheckJavaSupport();
+            if (javaCheck.javaEnabled) {
+                j = "1";
+                jv = javaCheck.version;
+            } else {
+                j = "0";
+                jv = "";
+            }
+            z = "sessid=" + MOLNETSessId + "&x=" + x + "&y=" + y + "&cd=" + cD + "&j=" + j + "&jv=" + jv;
+            y = "";
+            y += "<img src='http://" + MOLNETStatistAgent + "/hit?" + z + "&r=" + escape(document.referrer) + "' border=0  width=1 height=1 style='display:none;'>";
+            document.write(y);</script>
+
+        <noscript><img src="http://counter.molnet.ru/ct/count/hit" border='0'  width=1 height=1 ></noscript>
+        <!-- // Molnet counter -->
+
     </body>
 </html>
