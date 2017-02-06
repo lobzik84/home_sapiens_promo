@@ -273,6 +273,9 @@ $(function () {
             Title: {
                 required: true,
             },
+            Phone: {
+                required: true,
+            },
             Mail: {
                 required: true,
                 email: true
@@ -285,12 +288,12 @@ $(function () {
 
     $('#order').click(function (e) {
         e.preventDefault();
-        if ($('#o-text').val().length < 3 | !($('#o-mail').val().includes("@")) | $('#o-name').val().length < 2) {
-                swal({
-                    title: 'Заполните поля формы!',
-                    animation: false
-                });
-                return;
+        if ($('#o-text').val().length < 3 | $('#o-phone').val().length < 3 | !($('#o-mail').val().includes("@")) | $('#o-name').val().length < 2) {
+            swal({
+                title: 'Заполните поля формы!',
+                animation: false
+            });
+            return;
         }
         $('#o-text').val("Заявка на предзаказ: " + $('#o-text').val());
         $.ajax({
@@ -302,10 +305,12 @@ $(function () {
             data: $('#ord').serialize(),
             success: function (data) {
                 swal({
-                    title: 'Письмо отправлено!',
+                    title: 'Спасибо!',
+                    text: 'Наши менеджеры свяжутся с Вами в ближайшее время.',
                     animation: false
                 })
                 $('#o-name').val('');
+                $('#o-phone').val('');
                 $('#o-mail').val('');
                 $('#o-text').val('');
             }
@@ -314,11 +319,11 @@ $(function () {
     $('#question').click(function (e) {
         e.preventDefault();
         if ($('#q-text').val().length < 3 | !($('#q-mail').val().includes("@")) | $('#q-name').val().length < 2) {
-                swal({
-                    title: 'Заполните поля формы!',
-                    animation: false
-                });
-                return;
+            swal({
+                title: 'Заполните поля формы!',
+                animation: false
+            });
+            return;
         }
         $('#q-text').val("Вопрос по проекту УПРАВДОМ: " + $('#q-text').val());
         $.ajax({
@@ -330,7 +335,8 @@ $(function () {
             data: $('#quest').serialize(),
             success: function (data) {
                 swal({
-                    title: 'Письмо отправлено!',
+                    title: 'Спасибо!',
+                    text: 'Наши менеджеры свяжутся с Вами в ближайшее время.',
                     animation: false
                 })
                 $('#q-name').val('');
