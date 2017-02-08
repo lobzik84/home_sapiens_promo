@@ -1363,6 +1363,12 @@ video {
 .life .nav {
   padding-top: 80px;
 }
+.life .life__text {
+  display: none;
+}
+.life .text__active {
+  display: block;
+}
 .life__text {
   text-align: justify;
   font-family: 'arimo-regular', Arial, Helvetica, sans-serif;
