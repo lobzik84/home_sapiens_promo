@@ -52,33 +52,33 @@ $(function () {
     $('#quest').validate({
         rules: {
             Title: {
-                required: true,
+                required: true
             },
             Mail: {
                 required: true,
                 email: true
             },
             Text: {
-                required: true,
+                required: true
             }
-        },
+        }
     });
     $('#ord').validate({
         rules: {
             Title: {
-                required: true,
+                required: true
             },
             Phone: {
-                required: true,
+                required: true
             },
             Mail: {
                 required: true,
                 email: true
             },
             Text: {
-                required: true,
+                required: true
             }
-        },
+        }
     });
 
     $('#order').click(function (e) {
@@ -103,13 +103,13 @@ $(function () {
                     title: 'Спасибо!',
                     text: 'Наши менеджеры свяжутся с Вами в ближайшее время.',
                     animation: false
-                })
+                });
                 $('#o-name').val('');
                 $('#o-phone').val('');
                 $('#o-mail').val('');
                 $('#o-text').val('');
             }
-        })
+        });
     });
     $('#question').click(function (e) {
         e.preventDefault();
@@ -133,11 +133,11 @@ $(function () {
                     title: 'Спасибо!',
                     text: 'Наши менеджеры свяжутся с Вами в ближайшее время.',
                     animation: false
-                })
+                });
                 $('#q-name').val('');
                 $('#q-mail').val('');
                 $('#q-text').val('');
             }
-        })
+        });
     });
 });
