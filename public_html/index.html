@@ -390,102 +390,135 @@
                     <p class="life__text">
                         Диапазоны разрешенных значений параметров температуры и напряжения настраиваются в личном кабинете, так что вы легко сможете установить нужные значения и всегда быть спокойным за состояние дома в период вашего отсутствия.
                     </p>
-
-
                 </div>
             </div>
             <div class="preorder">
                 <div class="title">Приобретение</div>
-                <div>
-                <nav class="nav">
-                    <ul id="tabs1" class="nav__list">
-                        <li class="nav__item">
-                            <p class="nav__link">Задать вопрос</p>
+                <div class="preorder__left">
+                    <nav class="nav">
+                        <ul id="tabs1" class="nav__list">
+                            <li class="nav__item">
+                                <p class="nav__link">Задать вопрос</p>
+                            </li>
+                            <li class="nav__item active">
+                                <p class="nav__link">Купить</p>
+                            </li>
+                            <li class="nav__item">
+                                <p class="nav__link">О производителе</p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="preorder__form question">
+                        <p class="life__text">
+                            Если у Вас есть вопросы о системе, устройстве, комплекте поставки, воспользуйтесь формой ниже. Наши специалисты обязательно ответят Вам в кратчайшие сроки по электронной почте или телефону.
+                        </p>
+                        <br>
+                        <br>
+                        <form id="quest" action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
+                            <p class="form__title">Ваше имя<br><br>
+                                <input id="q-name" type="text" size="50" name="Title" value=""/>
+                            </p>
+                            <p class="form__title">Контактный телефон<br><br>
+                                <input id="q-phone" type="text" size="50" name="Phone" value=""/>
+                            </p>
+                            <p class="form__title">Электронная почта<br><br>
+                                <input id="q-mail" type="text" size="50" name="Mail" value=""/>
+                            </p>
+                            <p id="fb-form--text" class="form__title">Ваш вопрос<br><br>
+                                <textarea id="q-text" name="Text"></textarea>
+                            </p>
+                        </form>
+                        <form id="question" class="pt-40">
+                            <div class="order">
+                                <p class="order__title" style="font-size:27px;line-height:62px;">Отправить вопрос</p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="preorder__form active">
+                        <p class="life__text">
+                            Срок поставки в Москве - 1-2 дня с момента оплаты.
+                            <br>
+                            В комплекте поставки: контрольно-управляющий блок, 2 радиоуправляемых патрона для ламп, радиоуправляемая розетка, датчик открытия дверей/окон, датчик протечки, комплект аккумуляторов, фирменная сумка.
+                        </p>
+                        <form id="ord" action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
+                            <p class="form__title">Ваше имя<br><br>
+                                <input id="o-name" type="text" size="50" name="Title" value=""/>
+                            </p>
+                            <p class="form__title">Контактный телефон<br><br>
+                                <input id="o-phone" type="text" size="50" name="Phone" value=""/>
+                            </p>
+                            <p class="form__title">Электронная почта<br><br>
+                                <input id="o-mail" type="text" size="50" name="Mail" value=""/>
+                            </p>
+                            <p id="fb-form--text" class="form__title">Комментарий к заявке<br><br>
+                                <textarea id="o-text" name="Text"></textarea>
+                            </p>
+                            <!--input class="" value="Отправить" type="submit"-->
+                        </form>
+                        <form id="order" class="pt-40">
+                            <div class="order">
+                                <p class="order__title_button">Купить за</p>
+                                <p class="order__price">49 990 рублей</p>
+                            </div>
+                        </form>
+                    </div>
+                    <!--                <div class="preorder__form">
+                                        <p class="life__text">
+                                            В комплекте поставки: контрольно-управляющий блок, 2 радиоуправляемых патрона для ламп, радиоуправляемая розетка, датчик открытия дверей/окон, датчик протечки, комплект аккумуляторов, фирменная сумка.
+                                        </p>
+                                        <div class="fotorama mt-20"
+                                             data-width="678"
+                                             data-loop="true"
+                                             data-swipe="true"
+                                             data-transition="slide"
+                                             data-allowfullscreen="true"
+                                             data-nav="thumbs">
+                                            <a href="http://www.porjati.ru/uploads/posts/2012-02/thumbs/1329071122_15.jpg"><img src="http://www.porjati.ru/uploads/posts/2012-02/thumbs/1329071122_15.jpg"></a>
+                                            <a href="http://www.k0t.ru/wp-content/uploads/2015/07/Fat-Cats-563x353.jpg"><img src="http://www.k0t.ru/wp-content/uploads/2015/07/Fat-Cats-563x353.jpg"></a>
+                                            <a href="http://kaifolog.ru/uploads/posts/2013-03/thumbs/1363239485_049_2.jpg"><img src="http://kaifolog.ru/uploads/posts/2013-03/thumbs/1363239485_049_2.jpg"></a>
+                                        </div>
+                                    </div>-->
+                    <div class="preorder__form">
+                        <p class="life__text">
+                            ООО «Инновационный Технологический Центр МОЛНЕТ» - частная компания, основанная в 2007 году.
+                            <br>
+                            <br>
+                            Имеющийся опыт и мощности компании позволили осуществить полный производственный цикл проекта, от технического проектирования до его практической реализации, выпуска на рынок и сопровождения. В деятельности весомую роль играет тесное взаимодействие с научными и академическими кругами МГУ имени М.В.Ломоносова, Российской академии наук, НИЦ «Курчатовский институт», а также ряда коммерческих компаний, специализирующихся в области бытовой электроники, 3D моделирования и ряде смежных отраслей.
+                            <br>
+                            <br>
+                            Компания располагает всеми лицензиями, необходимыми для работы в рамках российского законодательства: телематические услуги связи, производство средств защиты конфиденциальной информации, а также собственной сертифицированной серверной площадкой.
+                            <br>
+                            <br>
+                            Заказчиками компании являются структуры федеральных и региональных органов власти, а также различные государственные и коммерческие организации. Компания располагает всеми лицензиями, необходимыми для работы в рамках российского законодательства (телематические услуги связи, производство средств защиты конфиденциальной информации), а также собственной сертифицированной серверной площадкой для разработки и эксплуатации проектов.
+                            <br>
+                            <br>
+                            Веб-сайт: <a class="preorder__form_link" href="http://company.molnet.ru/">http://company.molnet.ru/</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="preorder__right">
+                    <ul class="preorder__list">
+                        <li class="preorder__list_item">
+                            <img class="preorder__item_img" src="images/bag.png" alt="pic">
+                            <p class="preorder__item_text">Фирменная сумка</p>
                         </li>
-                        <li class="nav__item active">
-                            <p class="nav__link">Купить</p>
+                        <li class="preorder__list_item">
+                            <img class="preorder__item_img" src="images/base.png" alt="pic">
+                            <p class="preorder__item_text">Контрольно-управляющий блок</p>
                         </li>
-                        <li class="nav__item">
-                            <p class="nav__link">О производителе</p>
+                        <li class="preorder__list_item">
+                            <img class="preorder__item_img" src="images/sensors.png" alt="pic">
+                            <p class="preorder__item_text">Датчик открытия дверей/окон и датчик протечки</p>
+                        </li>
+                        <li class="preorder__list_item">
+                            <img class="preorder__item_img" src="images/socket.png" alt="pic">
+                            <p class="preorder__item_text">Радиоуправляемая розетка</p>
+                        </li>
+                        <li class="preorder__list_item">
+                            <img class="preorder__item_img" src="images/lamp.png" alt="pic">
+                            <p class="preorder__item_text">Радиоуправляемые патроны для ламп</p>
                         </li>
                     </ul>
-                </nav>
-                <div class="preorder__form question">
-                    <form id="quest" action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
-                        <p class="form__title">Ваше имя<br><br>
-                            <input id="q-name" type="text" size="50" name="Title" value=""/>
-                        </p>
-                        <p class="form__title">Электронная почта<br><br>
-                            <input id="q-mail" type="text" size="50" name="Mail" value=""/>
-                        </p>
-                        <p id="fb-form--text" class="form__title">Ваш вопрос<br><br>
-                            <textarea id="q-text" name="Text"></textarea>
-                        </p>
-                    </form>
-                    <form id="question" class="pt-40">
-                        <div class="order">
-                            <p class="order__title" style="font-size:27px;line-height:62px;">Отправить вопрос</p>
-                        </div>
-                    </form>
-                </div>
-                <div class="preorder__form active">
-                    <p class="life__text">
-                        Срок поставки в Москве - 1-2 дня с момента оплаты.
-                        <br>
-                        В комплекте поставки: контрольно-управляющий блок, 2 радиоуправляемых патрона для ламп, радиоуправляемая розетка, датчик открытия дверей/окон, датчик протечки, комплект аккумуляторов, фирменная сумка.
-                    </p>
-                    <form id="ord" action="http://company.molnet.ru/molnet_comp/ru/contacts" name="feedbackform" method="post">
-                        <p class="form__title">Ваше имя<br><br>
-                            <input id="o-name" type="text" size="50" name="Title" value=""/>
-                        </p>
-                        <p class="form__title">Контактный телефон<br><br>
-                            <input id="o-phone" type="text" size="50" name="Phone" value=""/>
-                        </p>
-                        <p class="form__title">Электронная почта<br><br>
-                            <input id="o-mail" type="text" size="50" name="Mail" value=""/>
-                        </p>
-                        <p id="fb-form--text" class="form__title">Комментарий к заявке<br><br>
-                            <textarea id="o-text" name="Text"></textarea>
-                        </p>
-                        <!--input class="" value="Отправить" type="submit"-->
-                    </form>
-                    <form id="order" class="pt-40">
-                        <div class="order">
-                            <p class="order__title_button">Купить за</p>
-                            <p class="order__price">49 990 рублей</p>
-                        </div>
-                    </form>
-                </div>
-                    </div>
-                <!--                <div class="preorder__form">
-                                    <p class="life__text">
-                                        В комплекте поставки: контрольно-управляющий блок, 2 радиоуправляемых патрона для ламп, радиоуправляемая розетка, датчик открытия дверей/окон, датчик протечки, комплект аккумуляторов, фирменная сумка.
-                                    </p>
-                                    <div class="fotorama mt-20"
-                                         data-width="678"
-                                         data-loop="true"
-                                         data-swipe="true"
-                                         data-transition="slide"
-                                         data-allowfullscreen="true"
-                                         data-nav="thumbs">
-                                        <a href="http://www.porjati.ru/uploads/posts/2012-02/thumbs/1329071122_15.jpg"><img src="http://www.porjati.ru/uploads/posts/2012-02/thumbs/1329071122_15.jpg"></a>
-                                        <a href="http://www.k0t.ru/wp-content/uploads/2015/07/Fat-Cats-563x353.jpg"><img src="http://www.k0t.ru/wp-content/uploads/2015/07/Fat-Cats-563x353.jpg"></a>
-                                        <a href="http://kaifolog.ru/uploads/posts/2013-03/thumbs/1363239485_049_2.jpg"><img src="http://kaifolog.ru/uploads/posts/2013-03/thumbs/1363239485_049_2.jpg"></a>
-                                    </div>
-                                </div>-->
-                <div class="preorder__form">
-                    <p class="life__text">
-                        ООО «Инновационный Технологический Центр МОЛНЕТ» - частная компания, основанная в 2007 году.
-                        <br>
-                        <br>
-                        Имеющийся опыт и мощности компании позволили осуществить полный производственный цикл проекта, от технического проектирования до его практической реализации, выпуска на рынок и сопровождения. В деятельности весомую роль играет тесное взаимодействие с научными и академическими кругами МГУ имени М.В.Ломоносова, Российской академии наук, НИЦ «Курчатовский институт», а также ряда коммерческих компаний, специализирующихся в области бытовой электроники, 3D моделирования и ряде смежных отраслей.
-                        <br>
-                        <br>
-                        Компания располагает всеми лицензиями, необходимыми для работы в рамках российского законодательства: телематические услуги связи, производство средств защиты конфиденциальной информации, а также собственной сертифицированной серверной площадкой.
-                        <br>
-                        <br>
-                        Веб-сайт: <a class="preorder__form_link" href="http://company.molnet.ru/">http://company.molnet.ru/</a>
-                    </p>
                 </div>
             </div>
         </main>

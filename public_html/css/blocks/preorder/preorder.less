@@ -1,7 +1,9 @@
 .preorder {
     .ta-c;
+    .relative;
     width: 100%;
     height: 1030px;
+    padding-bottom: 50px;
     .title {.black;}
     .order {
         margin: auto;
@@ -34,3 +36,40 @@
 .preorder__form_link {
     color: @blue;
 }
+
+.preorder__left {
+    .inline-b;
+    width: 45%;
+    max-width: 600px;
+     .preorder__form , .form__title, input, .nav, textarea, .life__text {
+        width: 100% !important;
+    }
+}
+.preorder__right {
+    .inline-b;
+    .va-t;
+    .ta-l;
+    max-width: 600px;
+    width: 45%;
+    margin-left: 7%;
+}
+.preorder__list_item {
+    margin-top: 10px;
+    &:first-child {
+        margin-top: 0px;
+    }
+}
+.preorder__item_img {
+    .inline-b;
+    width: 200px;
+}
+.preorder__item_text {
+    .inline-b;
+    .black;
+    .arimo-regular;
+    font-size: 20px;
+    line-height: 23px;
+    width: 50%;
+    padding-left: 20px;
+}
+

@@ -135,6 +135,7 @@ $(function () {
                     animation: false
                 });
                 $('#q-name').val('');
+                $('#q-phone').val('');
                 $('#q-mail').val('');
                 $('#q-text').val('');
             }
