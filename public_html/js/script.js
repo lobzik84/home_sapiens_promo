@@ -90,7 +90,7 @@ $(function () {
             });
             return;
         }
-        $('#o-text').val("Заявка на предзаказ: " + $('#o-text').val());
+        $('#o-text').val("Заявка на покупку: " + $('#o-text').val());
         $.ajax({
             type: "POST",
             url: $('#ord').attr('action'),
