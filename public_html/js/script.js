@@ -90,14 +90,18 @@ $(function () {
             });
             return;
         }
-        $('#o-text').val("Заявка на покупку: " + $('#o-text').val());
+        $('#o-text').val("<br> <b>Заявка на покупку:</b> " + $('#o-text').val());
         $.ajax({
             type: "POST",
             url: $('#ord').attr('action'),
             dataType: 'html',
             crossDomain: true,
             async: true,
-            data: $('#ord').serialize(),
+            data: {
+                Title: $('#o-name').val(),
+                Mail: $('#o-mail').val(),
+                Text: $('#o-text').val() + '<br> <b>Контактный телефон:</b> ' + $('#o-phone').val()
+            },
             success: function (data) {
                 swal({
                     title: 'Спасибо!',
@@ -120,14 +124,18 @@ $(function () {
             });
             return;
         }
-        $('#q-text').val("Вопрос по проекту УПРАВДОМ: " + $('#q-text').val());
+        $('#q-text').val("<br> <b>Вопрос по проекту УПРАВДОМ:</b> " + $('#q-text').val());
         $.ajax({
             type: "POST",
             url: $('#quest').attr('action'),
             dataType: 'html',
             crossDomain: true,
             async: true,
-            data: $('#quest').serialize(),
+            data: {
+                Title: $('#q-name').val(),
+                Mail: $('#q-mail').val(),
+                Text: $('#q-text').val() + '<br> <b>Контактный телефон:</b> ' + $('#q-phone').val()
+            },
             success: function (data) {
                 swal({
                     title: 'Спасибо!',
